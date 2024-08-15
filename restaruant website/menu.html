@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+    <style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(8, 16, 50, 0.7),rgba(4,9,30,0.7)),url(img/menu\ Back.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.menu-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.02);
+}
+
+.menu-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.item-details {
+    flex-grow: 1;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.item-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item-details {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+    </style>
+    </head>
+    <body>
+        <div class="l-navbar" id="navbar">
+            <nav class="nav">
+                <div>
+                  
+                    <div class="nav__list">
+                        <a href="home.html" class="nav__link active">
+                            <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                            <!-- <span class="nav__name">Dashboard</span> -->
+                        </a>
+                        <a href="menu.html" class="nav__link">
+                            <ion-icon name="menu" class="nav__icon"></ion-icon>
+                        </a>
+    
+                        <a href="profile.html" class="nav__link">
+                            <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                        </a>
+    
+                       
+                        <a href="contact.html" class="nav__link">
+                            <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+                        </a >
+    
+                        <a href="login.html" class="nav__link">
+                            <ion-icon name="people-outline" class="nav__icon"></ion-icon>
+    
+                        </a>
+    
+                        
+                    </div>
+                </div>
+    
+            
+            </nav>
+        </div>
+
+        
+ <!-- ===== IONICONS ===== -->
+ <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+    
+ <div class="menu-container">
+    <h1 class="menu-title">Our Menu</h1>
+
+    <div class="menu-item">
+        <img src="img/Grilled Chicken.jpg" alt="Grilled Chicken">
+        <div class="item-details">
+            <div class="item-name">Grilled Chicken</div>
+            <div class="item-price">$15.99</div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/Pasta Primavera.jpeg" alt="Pasta Primavera">
+        <div class="item-details">
+            <div class="item-name">Pasta Primavera</div>
+            <div class="item-price">$12.49</div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/Steak Frites.jpg" alt="Steak Frites">
+        <div class="item-details">
+            <div class="item-name">Steak Frites</div>
+            <div class="item-price">$18.99</div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/Caesar Salad.jpg" alt="Caesar Salad">
+        <div class="item-details">
+            <div class="item-name">Caesar Salad</div>
+            <div class="item-price">$9.99</div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/Margherita Pizza.jpg" alt="Margherita Pizza">
+        <div class="item-details">
+            <div class="item-name">Margherita Pizza</div>
+            <div class="item-price">$14.49</div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="img/Chocolate Cake.jpg" alt="Chocolate Cake">
+        <div class="item-details">
+            <div class="item-name">Chocolate Cake</div>
+            <div class="item-price">$6.99</div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

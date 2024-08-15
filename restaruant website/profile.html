@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(8, 16, 50, 0.7),rgba(4,9,30,0.7)),url(img/menu\ Back.jpg) no-repeat;
+    background-size: cover;
+    display: flex;    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    background-color: #fff;
+    width: 550px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.profile-header {
+    background-color: #333;
+    padding: 30px 20px;
+    color: #fff;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 1.8rem;
+    margin: 0;
+
+}
+
+
+
+.profile-details {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.profile-details h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.profile-details p, 
+.profile-details ul {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #f4f4f4;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+</style>
+    </head>
+    <body>
+        <div class="l-navbar" id="navbar">
+            <nav class="nav">
+                <div>
+                  
+                    <div class="nav__list">
+                        <a href="home.html" class="nav__link active">
+                            <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                            <!-- <span class="nav__name">Dashboard</span> -->
+                        </a>
+                        <a href="menu.html" class="nav__link">
+                            <ion-icon name="menu" class="nav__icon"></ion-icon>
+                        </a>
+
+                        <a href="profile.html" class="nav__link">
+                            <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                        </a>
+
+                       
+                        <a href="contact.html" class="nav__link">
+                            <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+                        </a >
+    
+                        <a href="login.html" class="nav__link">
+                            <ion-icon name="people-outline" class="nav__icon"></ion-icon>
+    
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+ <!-- ===== IONICONS ===== -->
+ <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+        <div class="profile-container">
+            <div class="profile-header">
+                <img src="img/menu Back.jpg" alt="User Image" class="profile-image">
+                <h1 class="profile-name">John Doe</h1>
+            </div>
+            <div class="profile-details">
+                <h2>Email</h2>
+                <p>johndoe@example.com</p>
+                
+                <h2>Phone</h2>
+                <p>(123) 456-7890</p>
+
+                <h2>Favorite Food</h2>
+                <ul class="skills-list">
+                    <li>HGrilled Chicken</li>
+                    <li>Margherita Pizza</li>
+                   
+                </ul>
+
+            </div>
+        </div>
+
+</body>
+</html>

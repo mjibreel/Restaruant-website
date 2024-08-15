@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+    body {
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/pasta.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero-section {
+    background-image: url('images/restaurant-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin: 0;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+.menu-preview {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.menu-preview h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin: 15px 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.menu-item p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+        </style>
+    </head>
+    <body id="body-pd">
+        <div class="l-navbar" id="navbar">
+            <nav class="nav">
+                <div>
+                  
+                    <div class="nav__list">
+                        <a href="home.html" class="nav__link active">
+                            <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                            <!-- <span class="nav__name">Dashboard</span> -->
+                        </a>
+                        <a href="menu.html" class="nav__link">
+                            <ion-icon name="menu" class="nav__icon"></ion-icon>
+                        </a>
+
+                        <a href="profile.html" class="nav__link">
+                            <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                        </a>
+
+                       
+                        <a href="contact.html" class="nav__link">
+                            <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+                        </a >
+    
+                        <a href="login.html" class="nav__link">
+                            <ion-icon name="people-outline" class="nav__icon"></ion-icon>
+    
+                        </a>
+                    </div>
+                </div>
+    
+            
+            </nav>
+        </div>
+
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        
+        <header class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Mahalla Restaurant</h1>
+                <p class="hero-subtitle">A place where taste meets the beauty</p>
+                <a href="menu.html" class="cta-button">Explore Our Menu</a>
+            </div>
+        </header>
+
+        <!-- <section id="menu" class="menu-preview">
+            <h2>Our Specialties</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="img/Grilled Chicken.jpg" alt="Dish 1">
+                    <h3>Dish Name 1</h3>
+                    <p>$15.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Pasta Primavera.jpeg" alt="Dish 2">
+                    <h3>Dish Name 2</h3>
+                    <p>$12.49</p>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Steak Frites.jpg" alt="Dish 3">
+                    <h3>Dish Name 3</h3>
+                    <p>$18.99</p>
+                </div>
+            </div>
+        </section>
+     -->
+        <footer class="footer">
+            <p>&copy; 2024 Mahalla Restaurant. All rights reserved.</p>
+        </footer>
+       
+    </body>
+</html>
